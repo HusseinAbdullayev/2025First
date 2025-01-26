@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <section id="promoCode">
-            <p>15% off site-wide! use promo code LOVE15</p>
+      <p>15% off site-wide! use promo code LOVE15</p>
     </section>
     <header>
-        <div class="container-Custom">
-            <div class="all-header">
-                <div class="logo-header">
-                    <a href="">
-                        <img src="assets/images/logo-petshop.png" alt="">
-                    </a>
-                </div>
-                <div class="navbar">
-                    <a href="">Shop</a>
-                    <a href="">About</a>
-                    <a href="">Size Guide</a>
-                    <a href="">Contact</a>
-                    <a href=""><i class="fa-solid fa-user"></i> Log In</a>
-                </div>
+      <div class="container-Custom">
+        <div class="all-header">
+          <div class="logo-header">
+            <a href="">
+              <img src="assets/images/logo-petshop.png" alt="" />
+            </a>
+          </div>
+          <div id="navbar">
+            <a href="">Shop</a>
+            <a href="">About</a>
+            <a href="">Size Guide</a>
+            <a href="">Contact</a>
+            <a href=""><i class="fa-solid fa-user"></i> Log In</a>
+          </div>
 
-                <div class="basket-wish">
-                    <a href=""><i class="fa-solid fa-heart"></i></a>
-                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a href=""><i class="fa-solid fa-bars"></i>
-                </div>
-                
-            </div>
-
+          <div class="basket-wish">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a id="navbar-icon" onclick="toggleNavbar()"><i class="fa-solid fa-bars"></i></a>
+          </div>
         </div>
-       
+      </div>
     </header>
-</body>
+
+    <script src="assets/app.js"></script>
+  </body>
 </html>
