@@ -5,4 +5,82 @@
 
 a{
     text-decoration: none;
+    color: black;
+}
+
+.container-Custom{
+    padding-left: 3rem;
+    padding-right:3rem;
+}
+
+body{
+    background-color: #F6E5DC;
+}
+
+
+/* PromoCode Section */
+
+#promoCode{
+    background-color: #8d5d30ee;
+    height: 50px;
+    text-align: center;
+}
+#promoCode p{
+    color: white;
+    font-size: 19px;
+    padding-top: 13px;
+}
+
+/* Header */
+
+.all-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 70px;
+}
+
+.logo-header img{
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-grow: 1; 
+    margin-left: 700px;
+}
+.navbar a {
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase; 
+}
+
+.navbar a:hover {
+    color: #ff6600;
+}
+
+.basket-wish {
+    display: flex;
+    gap: 15px;
+}
+
+.basket-wish a {
+    color: black;
+    font-size: 18px;
+}
+
+.basket-wish a:hover {
+    color: #ff6600;
+}
+
+
+/* For Phone */
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
+    
 }
