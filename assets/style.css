@@ -15,6 +15,7 @@ a{
 
 body{
     background-color: #F6E5DC;
+    overflow-x: hidden;
 }
 
 
@@ -33,11 +34,14 @@ body{
 
 /* Header */
 
+
+
 .all-header{
 display: flex;
 justify-content: space-between;
 align-items: center;
 height: 70px;
+background-color: #F6E5DC;
 }
 
 .logo-header img{
@@ -76,8 +80,16 @@ height: 70px;
 }
 
 #navbar-icon{
+    cursor: pointer;
     display: none;
+   
 }
+
+.rotate {
+    transform: rotate(180deg);
+  }
+
+
 
 /* HOMEPAGE */
 
@@ -118,7 +130,9 @@ height: 70px;
   }
   
   .shop-button:hover {
-    background-color: #333; 
+    background-color: white;
+    border:1px solid black;
+    color: black; 
     transform: scale(1.05); 
   }
 
@@ -132,12 +146,243 @@ height: 70px;
 }
 
 
+  
+
+/* Best Seller Section */
+
+.best-seller{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+}
+
+.headers-hp{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    margin-left: 5rem;
+}
+.product-details-hp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-hp-pd{
+    width: 100% !important;
+}
+
+.product-name{
+    position: relative;
+    left: 10%;
+    top: -30px ;
+    z-index: 3;
+    font-size: 25px;
+}
+
+.product-price{
+    position: relative;
+    right: 20%;
+    top: -30px ;
+    z-index: 3;
+    font-size: 20px;
+}
+
+.product-details-hp:hover{
+    color: #ff6600;
+
+}
+
+.shop-now-button{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
 
 
 
+/* FOOTER SECTION */
+
+footer{
+    margin-top: 5rem;
+}
+.footer-title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-all{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+footer a{
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.menu-footer a{
+    transition: ease 0.2s;
+}
+
+.menu-footer a:hover{
+    color: rgba(112, 92, 67, 0.445);
+}
+
+footer p{
+    line-height: 1.4rem;
+}
+
+.terms-footer-nav a{
+    text-decoration: underline;
+    transition: ease 0.1s;
+}
+
+.terms-footer-nav a:hover{
+    text-decoration:underline rgba(112, 92, 67, 0.445);
+}
+
+.newsletter-footer-nav button{
+    display: block;
+    margin-top: 1rem;
+}
+
+
+.inp-email{
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+    width: 180px;
+    height: 33px;
+    background-color:rgba(137, 43, 226, 0);
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    display: block;
+}
+
+.inp-email:focus {
+    border-bottom: 2px solid rgba(112, 92, 67, 0.445);
+  }
+
+  .inp-email:hover{
+    background-color: white;
+  }
+
+  .checkbox-custom{
+    width: 1rem;
+    height: 1rem;
+    background-color: lightgray;
+    border: 2px solid gray;
+    border-radius: 0; 
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+
+  
+  .checkbox-custom:hover {
+    background-color: #d1d1d1;
+  }
+
+ 
+  .checkbox-custom:checked {
+    background-color: gray;
+    border-color: black;
+  }
+
+  .newsletter-footer-nav span{
+    color: #333;
+    font-size: 13px;
+    margin-left: 0.2rem;
+  }
+
+
+
+  /* SIZE GUIDE PAGE */
+  /* SIZE GUIDE PAGE */
+  /* SIZE GUIDE PAGE */
+
+
+
+  .about-sizeguide-all{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .about-sizeguide-left{
+    width: 50%;
+    margin-left: 3rem;
+  }
+
+  .about-sizeguide-left h1{
+    font-size: 45px;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+  }
+
+  .about-sizeguide-left p{
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .about-sizeguide-left-text {
+    width: 60%;
+
+  }
+  .about-sizeguide-left-text p {
+    margin-bottom: 2rem;
+  }
+
+  .about-sizeguide-img{
+    width: 50%;
+  }
+
+  .about-sizeguide-img img{
+    max-width: 100%;
+  }
+
+  .pets-sizes {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pets-sizes img{
+    width: 40px;
+  }
+
+  .pets-sizes-text{
+    width: 60%;
+  }
+
+  .pets-logos h2{
+    color: #D18656;
+    margin-top: 3px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+
+
+   /* section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+
+  }
+
+  section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }  */
 
 
 /* For Phone */
+
+
 
 @media screen and (max-width: 768px) {
 
@@ -147,20 +392,28 @@ height: 70px;
     }
 
     #navbar{
-        display: none; 
-        flex-direction: column; 
-        background-color: white !important; 
-        position: absolute;
-        top: 60px; 
-        right: 0;
-        width: 100%;
-        padding: 1rem 0;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-         z-index: 1;  
+         display: none; 
+         flex-direction: column; 
+         background-color: white !important; 
+         position: absolute;
+         top: 60px; 
+         right: 0;
+         width: 100%;
+         padding: 1rem 0;
+         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+          z-index: 1; 
+        text-align: center; 
+      
+    }
+
+    .x-navbar{
+        display: block;
+
     }
 
     #navbar-icon{
         display: block;
+        z-index: 111;
     }
 
     .logo-header img {
@@ -169,5 +422,66 @@ height: 70px;
     .show {
         display: flex !important;
     }
+
+    /* Home page */
+    .homepage{
+        flex-direction: column-reverse;
+    }
+    .right-hp {
+        width: 100%;
+    }
+    .right-hp img{
+        width: 100% !important;
+    }
+    .top-hp a{
+        margin-left:3rem;
+    }
+
+    .bottom-hp img{
+        width: 140%;
+        
+    }   
+    .top-hp h1 {
+        font-size: 40px;
+    }
+
+    /* BEST SELLER SECTION */
+
+    .product-name{
+        font-size: 15px;
+        left:10px;
+    }
+    .product-price{
+        font-size: 13px;
+        right: 10px;
+    }
+
+    /* FOOTER SECTION */
+
+    .footer-all {
+        flex-wrap: wrap;
+       }
+
+
+     /* SIZE-GUIDE SECTION   */
+       .about-sizeguide-all{
+        flex-direction: column-reverse;
+       }
+       .about-sizeguide-img {
+        width: 100%;
+       }
+       .about-sizeguide-left{
+        width: 100%;
+       }
+       .about-sizeguide-left-text{
+        width: 80%;
+       }
+       
+
 }
 
+@media (max-width: 480px) {
+    .footer-all {
+     flex-wrap: wrap;
+    }
+  }

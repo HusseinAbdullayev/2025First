@@ -1,18 +1,52 @@
-// Hamburger
-// const navbarIcon= document.querySelector('.navbar-icon')
-// const navbar= document.querySelector('.navbar')
+
+// HAMBURGER AND X ICON CHANCE 
 
 function toggleNavbar() {
-    const navbar = document.getElementById('navbar');
-    
-    // Navbar'ı açıb bağlamaq üçün .show sinfini əlavə et
-    navbar.classList.toggle('show');
-    
-    // Eyni zamanda stil dəyişdirə bilərik, məsələn:
-    if (navbar.classList.contains('show')) {
-      navbar.style.backgroundColor = '#333'; // Navbarın fon rəngini dəyiş
-      navbar.style.display = 'block'; // Navbarı göstər
-    } else {
-      navbar.style.display = 'none'; // Navbarı gizlət
-    }
+  const navbar = document.getElementById('navbar');
+  const icon = document.querySelector('#navbar-icon i'); // Düzgün ikon seçimi
+
+  navbar.classList.toggle('show');
+
+ 
+  if (navbar.classList.contains('show')) {
+    icon.classList.remove('fa-bars');
+    icon.classList.add('fa-xmark');
+  } else {
+    icon.classList.remove('fa-xmark');
+    icon.classList.add('fa-bars');
   }
+}
+
+
+//SPLIDE JS 
+
+var splide = new Splide( '.splide', {
+  type   : 'loop',
+  drag   : 'free',
+  perPage: 3,
+} );
+
+splide.mount();
+
+
+
+
+
+  //Sections animation
+  // const sections = document.querySelectorAll("section");
+
+  //   const observerOptions = {
+  //     threshold: 0.2
+  //   };
+
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach(entry => {
+  //       if (entry.isIntersecting) {
+  //         entry.target.classList.add("show");
+  //       }
+  //     });
+  //   }, observerOptions);
+
+  //   sections.forEach(section => {
+  //     observer.observe(section);
+  //   });
