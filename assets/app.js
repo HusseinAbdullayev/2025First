@@ -32,6 +32,45 @@ splide.mount();
 
 
 
+//Contact inputs 
+
+
+  function validateForm() {
+    const fields = [
+      { id: 'first-name', name: 'First Name' },
+      { id: 'last-name', name: 'Last Name' },
+      { id: 'email', name: 'Email' },
+      { id: 'phone', name: 'Phone' }
+    ];
+    
+    let isValid = true;
+
+    fields.forEach(field => {
+      const input = document.getElementById(field.id);
+      const errorText = input.nextElementSibling;
+      input.classList.remove('error'); 
+
+      if (input.value.trim() === '') {
+        input.classList.add('error');
+        if (!errorText) {
+          const errorMessage = document.createElement('p');
+          errorMessage.className = 'error-message';
+          errorMessage.innerText = `${field.name} cannot be empty.`;
+          input.parentNode.appendChild(errorMessage);
+        }
+        isValid = false;
+      } else if (errorText) {
+        input.parentNode.removeChild(errorText); 
+      }
+    });
+
+    if (isValid) {
+      alert('Form uğurla göndərildi!');
+    }
+  }
+
+
+
   //Sections animation
   // const sections = document.querySelectorAll("section");
 
