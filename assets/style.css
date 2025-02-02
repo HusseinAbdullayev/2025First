@@ -4,7 +4,7 @@
 } 
 
 a{
-    text-decoration: none;
+    text-decoration: none !important;
     color: black;
 }
 
@@ -35,6 +35,9 @@ body{
 /* Header */
 
 
+header{
+  background-color: #F6E5DC;
+}
 
 .all-header{
 display: flex;
@@ -205,6 +208,7 @@ background-color: #F6E5DC;
 
 footer{
     margin-top: 5rem;
+    background-color: #F6E5DC;
 }
 .footer-title{
     margin-top: 1rem;
@@ -418,7 +422,138 @@ footer p{
     margin-bottom: 3rem;
    }
 
+   #shopHp{
+    padding-top: 3rem;
+    background-color: white;
+    padding-bottom: 3rem;
+   }
+   /* SHOP PAGE ALL */
+   .shoppg-all{
+    display: flex;
 
+   }
+
+   .filters-shop{
+    width: 20%;
+   }
+
+   .all-products{
+    width: 80%;
+   }
+
+   .card-body{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2 !important;
+    background-color: white;
+
+   }
+   .card-body h5{
+    font-size: 15px;
+   }
+   .card-body p{
+    font-size: 15px;
+    font-weight: 600;
+   }
+
+   .pr-card{
+    border:0px !important;
+
+   }
+
+
+   .card {
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  .card img{
+    width: 100%;
+    transition: transform 0.5s ease;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .card img:hover {
+    transform: scale(1.3);
+  }
+
+  .filters-shop li{
+    padding-top: 1rem;
+    font-size:17px;
+    font-weight: 400;
+  }
+
+  .filters-shop ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .filters-shop p{
+    font-size: 20px;
+  }
+  .filters-shop hr{
+    width: 90%;
+
+  }
+  
+  .prpage-text h1{
+    font-size: 30px;
+  }
+  .p-products{
+    padding-bottom: 1rem;
+    font-size: 18px;
+    width: 60%;
+    line-height: 1.8;
+    font-weight: 400;
+  }
+
+  .product-count-span{
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+  }
+
+
+
+
+  .selected{
+    font-size: 18px;
+    color:#8d5d30ee ;
+  }
+
+  .sortby-prcount{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .sort-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 10px;
+  }
+
+  
+  .sort-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .sort-select {
+
+    width: 200px;
+    padding: 0.5rem;
+    border: none;
+    font-size: 16px;
+  }
 
    /* section {
     opacity: 0;
